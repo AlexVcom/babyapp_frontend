@@ -28,6 +28,7 @@ export default class AppNavbar extends Component {
             <NavbarBrand tag={Link} to="/api/contact">CONTACT</NavbarBrand>
             <NavbarBrand tag={Link} to="/api/about">ABOUT</NavbarBrand>
             <NavbarBrand tag={Link} to="/api/user/">USER</NavbarBrand>
+            <NavbarBrand tag={Link} to="/api/registration">REGESTRATION</NavbarBrand>
             <NavbarBrand tag={Link} to="/api/login">LOGIN</NavbarBrand>
     
           </Nav>

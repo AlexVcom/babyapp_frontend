@@ -12,7 +12,7 @@ import UserEdit from './componets/UserEdit.js'
 import Login from './componets/Login.js'
 
 import { BrowserRouter as Router,
-  Route,Switch, Redirect
+  Route,Switch, Redirect, Link
 
 } from 'react-router-dom';
 // import Switch from 'react-bootstrap/esm/Switch';
@@ -20,6 +20,11 @@ import { BrowserRouter as Router,
 
 
 class App extends Component {
+
+  logout = () => {
+    localStorage.clear();
+    // this.setState({username : "", isAuthenticated : false});
+  }
 
   render() {    
     // formatowanie shift+option+f
@@ -33,9 +38,9 @@ class App extends Component {
         <Route path="/api/contact" component={Contact}/>
         <Route path="/api/user/:id" component={User}/>
         <Route path="/api/registration" component={Registration}/>
+        <Route path="/api/login" component={Login}/>
         <Route path="/api/admin" exact={true} component={AdminUserEdit}/>
         <Route path="/api/edit/:id" component={UserEdit}/>
-        <Route path="/api/edit/:id" component={Login}/>
         <Route path="/404" component={NotFoundPage}/>
         <Redirect to="/404"/>
         </Switch>

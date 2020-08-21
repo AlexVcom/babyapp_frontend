@@ -192,7 +192,7 @@ class Registration extends Component {
             </Form.Group>
             </Form.Row>
 
-            <Button variant="primary" type="submit">Submit</Button>
+            <Button variant="warning"  size="lg" type="submit">Submit</Button>
           </Form>
           
         </div>

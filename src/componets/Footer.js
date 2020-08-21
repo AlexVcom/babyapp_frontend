@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card'
+import '../componets/CSS/Footer.css'
 
 
 class Footer extends Component {
@@ -10,8 +11,8 @@ class Footer extends Component {
         <>
           <Card>
             <Card.Body>
-              <Card.Text>
-                A.V info@alexandervorobiov.com
+              <Card.Text >
+               <div className="Footer"> A.V info@alexandervorobiov.com </div>
              </Card.Text>
             </Card.Body>
           </Card>

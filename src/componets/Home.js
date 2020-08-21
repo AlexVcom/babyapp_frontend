@@ -6,6 +6,23 @@ class Home extends Component {
   render() {
     return (
       <div>
+      <br/>
+
+        <Card>
+          <Card.Img variant="top" src="holder.js/100px180" />
+          <Card.Body>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk
+              of the card's content.
+      </Card.Text>
+          </Card.Body>
+        </Card>
+        <br />
+        <Card>
+        </Card>
+
+        <br />
+
         <Carousel>
           <Carousel.Item className="About">
             <img
@@ -46,18 +63,7 @@ class Home extends Component {
         </Carousel>
 
         <br />
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk
-              of the card's content.
-      </Card.Text>
-          </Card.Body>
-        </Card>
-        <br />
-        <Card>
-        </Card>
+
 
 
         <br />
@@ -92,19 +98,19 @@ class Home extends Component {
               <Card.Title>Card title</Card.Title>
               <Card.Text>
                 This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+                content.{' '}
               </Card.Text>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>
             </Card.Footer>
           </Card>
-          <Card bg="primary" text="white" className="text-center p-3">
-            <blockquote className="blockquote mb-0 card-body">
+          <Card bg="warning" text="black" className="text-center p-3">
+            <blockquote   className="blockquote mb-0 card-body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                 erat a ante.
-      </p>
+              </p>
               <footer className="blockquote-footer">
                 <small className="text-muted">
                   Someone famous in <cite title="Source Title">Source Title</cite>
@@ -116,7 +122,7 @@ class Home extends Component {
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
-                This card has supporting text below as a natural lead-in to additional
+                2 This card has supporting text below as a natural lead-in to additional
         content.{' '}
               </Card.Text>
               <Card.Text>
@@ -130,7 +136,7 @@ class Home extends Component {
           <Card className="text-right">
             <blockquote className="blockquote mb-0 card-body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                 erat a ante.
       </p>
               <footer className="blockquote-footer">

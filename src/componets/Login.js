@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import RegistrationAlert from '/Users/alex/babyapp_front/src/componets/RegistrationAlert.js'
+import {Form, Button  }from 'react-bootstrap'
+import RegistrationAlert from '../componets/RegistrationAlert.js'
+import "./CSS/Login.css"
 
 class Login extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class Login extends Component {
     }
 
     loginUser(username, password) {
-        fetch('http://localhost:8080/login', {
+        fetch('http://localhost:8080/api/users', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -61,9 +61,9 @@ class Login extends Component {
                             <Form.Control type="password" name="password" />
                         </Form.Group>
 
-                        <Button block size="lg" type="submit">
+                        <Button variant="warning" block size="lg" type="submit">
                             Login
-            </Button>
+                         </Button>
 
                     </Form>
 
