@@ -21,9 +21,9 @@ class About extends Component {
           </div>
           
           <div class="col-md-3 col-sm-6">
-            <div class="team">
+            <div  class="team">
               <div class="team-image">
-                <img src='https://via.placeholder.com/243x300' class="img-responsive" alt="team image" />
+                <img class="img-responsive" style={{ width: 'auto', height: 'auto' }}   object src={require('../componets/images/IMG_0403.JPG')} alt="team image" />
                 <div class="social-icons">
                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -39,7 +39,7 @@ class About extends Component {
           <div class="col-md-3 col-sm-6">
             <div class="team">
               <div class="team-image">
-                <img src="https://via.placeholder.com/243x300" class="img-responsive" alt="team image"/>
+                <img class="img-responsive" style={{ width: 'auto', height: 'auto' }}   object src={require('../componets/images/IMG_0406.JPG')} alt="team image"/>
                 <div class="social-icons">
                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -55,7 +55,7 @@ class About extends Component {
           <div class="col-md-3 col-sm-6">
             <div class="team">
               <div class="team-image">
-                <img src="https://via.placeholder.com/243x300" class="img-responsive" alt="team image"/>
+                <img style={{ width: 'auto', height: 'auto' }}   object src={require('../componets/images/IMG_0416.JPG')} alt="team image" class="img-responsive" />
                 <div class="social-icons">
                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -71,7 +71,7 @@ class About extends Component {
           <div class="col-md-3 col-sm-6">
             <div class="team">
               <div class="team-image">
-                <img className="img-about" object src={require('./images/IMG_0389.JPG')} alt="team image"/>
+                <img className="img-about" style={{ width: 'auto', height: 'auto' }}   object src={require('./images/IMG_0389.JPG')} alt="team image"/>
                 <div class="social-icons">
                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>

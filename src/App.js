@@ -13,17 +13,11 @@ import Login from './componets/Login.js'
 
 import { BrowserRouter as Router,
   Route,Switch, Redirect
-
 } from 'react-router-dom';
-// import Switch from 'react-bootstrap/esm/Switch';
-// import ReactDOM from 'react-dom';
 
 
 class App extends Component {
-
   render() {    
-    // formatowanie shift+option+f
-    // return musi zwracać środek 
     return <div>
       <Router>
         <AppNavbar/>
@@ -35,7 +29,7 @@ class App extends Component {
         <Route path="/api/registration" component={Registration}/>
         <Route path="/api/admin" exact={true} component={AdminUserEdit}/>
         <Route path="/api/edit/:id" component={UserEdit}/>
-        <Route path="/api/edit/:id" component={Login}/>
+        <Route path="/api/login" component={Login}/>
         <Route path="/404" component={NotFoundPage}/>
         <Redirect to="/404"/>
         </Switch>
