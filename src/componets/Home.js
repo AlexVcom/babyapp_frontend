@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Carousel, Card, CardColumns } from 'react-bootstrap'
+import { Carousel, Card, CardColumns, Button } from 'react-bootstrap'
 
 
 class Home extends Component {
@@ -10,7 +10,6 @@ class Home extends Component {
           <Carousel.Item className="About">
             <img
               className="d-block w-100"
-              //   src="holder.js/800x400?text=First slide&bg=373940"
               src="./images/IMG_0404.JPG"
               alt="First slide"
             />
@@ -46,15 +45,28 @@ class Home extends Component {
         </Carousel>
 
         <br />
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px180" />
+        <Card >
+          <Card.Img />
           <Card.Body>
             <Card.Text>
               Some quick example text to build on the card title and make up the bulk
               of the card's content.
-      </Card.Text>
+            </Card.Text>
           </Card.Body>
         </Card>
+
+        <Card className="text-center">
+          <Card.Header>Featured</Card.Header>
+          <Card.Body>
+            <Card.Title>Special title treatment</Card.Title>
+            <Card.Text>
+              With supporting text below as a natural lead-in to additional content.
+            </Card.Text>
+            <Button variant="warning">Go somewhere</Button>
+          </Card.Body>
+          <Card.Footer className="text-muted">2 days ago</Card.Footer>
+        </Card>
+
         <br />
         <Card>
         </Card>
@@ -63,8 +75,8 @@ class Home extends Component {
         <br />
 
         <CardColumns>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+          <Card border="warning"  >
+            <Card.Img variant="top" object src={require('../componets/images/IMG_0414.JPG')} alt="Generic placeholder image" />
             <Card.Body>
               <Card.Title>Card title that wraps to a new line</Card.Title>
               <Card.Text>
@@ -73,7 +85,7 @@ class Home extends Component {
       </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="p-3">
+          <Card border="warning" className="p-3">
             <blockquote className="blockquote mb-0 card-body">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
@@ -86,8 +98,8 @@ class Home extends Component {
               </footer>
             </blockquote>
           </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+          <Card border="warning"  >
+            <Card.Img variant="top" object src={require('/Users/alex/babyapp_front/src/componets/images/IMG_0398.JPG')} alt="Generic placeholder image" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
@@ -99,10 +111,10 @@ class Home extends Component {
               <small className="text-muted">Last updated 3 mins ago</small>
             </Card.Footer>
           </Card>
-          <Card bg="primary" text="white" className="text-center p-3">
+          <Card bg="warning" text="white" className="text-center p-3">
             <blockquote className="blockquote mb-0 card-body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                 erat a ante.
       </p>
               <footer className="blockquote-footer">
@@ -112,9 +124,10 @@ class Home extends Component {
               </footer>
             </blockquote>
           </Card>
-          <Card className="text-center">
+          <Card border="warning" className="text-center">
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>1 Card title</Card.Title>
+              <Card.Img object src={require('../componets/images/IMG_0412.JPG')} alt="Generic placeholder image" />
               <Card.Text>
                 This card has supporting text below as a natural lead-in to additional
         content.{' '}
@@ -125,9 +138,9 @@ class Home extends Component {
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img src="holder.js/100px160" />
+            <Card.Img object src={require('../componets/images/IMG_0393.JPG')} alt="Generic placeholder image" />
           </Card>
-          <Card className="text-right">
+          <Card border="warning" className="text-right">
             <blockquote className="blockquote mb-0 card-body">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
@@ -140,8 +153,9 @@ class Home extends Component {
               </footer>
             </blockquote>
           </Card>
-          <Card>
+          <Card border="warning">
             <Card.Body>
+              <Card.Img object src={require('../componets/images/IMG_0394.JPG')} alt="Generic placeholder image" />
               <Card.Title>Card title</Card.Title>
               <Card.Text>
                 This is a wider card with supporting text below as a natural lead-in to

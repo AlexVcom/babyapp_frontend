@@ -114,16 +114,7 @@ class UserProfile extends Component {
                                 <ButtonGroup  className="row align-items-start">
                                     <Button  color="warning" tag={Link} to={"/api/edit/1"}>Edit profile</Button>
                                 </ButtonGroup>
-
-                                {/* <div class="col-md-2">
-                                    <input type="submit" href={"/api/edit/1" } class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
-                                </div> */}
-
-
-
-
                             </div>
-                                
                             <div class="row">
                                 {/* HINT TIPS  */}
                                 <div class="col-md-4">
@@ -149,13 +140,10 @@ class UserProfile extends Component {
                                             )}
                                             </>
                                         })} */}
-                                        
                                     </div>
                                 </div>
-
                                 <div class="col-md-8">
                                     <div class="tab-content profile-tab" id="myTabContent">
-
                                         {/* Your info  */}
                                         {children.map((child) => {
                                             return <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -230,5 +218,4 @@ class UserProfile extends Component {
         </>
     }
 }
-
 export default withRouter(UserProfile);

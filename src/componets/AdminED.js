@@ -77,7 +77,7 @@ class EditUser extends Component {
             <thead>
               <tr>
                 <th width="20%"> Id</th>
-                <th width="20%"> Create Date</th>
+                <th width="20%"> Create</th>
                 <th width="20%"> User Name</th>
                 <th width="20%">Email</th>
                 <th width="20%">Telephone</th>

@@ -102,23 +102,13 @@ class UserEdit extends Component {
                              return <>
                          <Form.Label for="name">Child name</Form.Label>
                         <Form.Control  autoFocus name="name" placeholder="Child name" type="text" id="name" value={child.name || ''}
-                            onChange={this.handleChange} autoComplete="name" 
-                            />
-                    {/* </Form.Group> */}
-
-                    {/* //data urodzenia  */}
-                    {/* <Form.Group  > */}
+                            onChange={this.handleChange} autoComplete="name"/>
                         <Form.Label for="childBirthDay">Child Birth Day</Form.Label><br />
                         <DatePicker value={child.birthDate}
-                            // value={item.childBirthDay || this.state.startDate}
-                            onChange={this.handleChange} name="childBirthDay" />
-
-
+                            onChange={this.handleChange} name="childBirthDay"/>
                             </>
                          })}
                     </Form.Group>
-                    
-
                     <Form.Row>
                     {children.map((child)=>{
                              return <>
@@ -133,8 +123,6 @@ class UserEdit extends Component {
                         <Form.Group>
                             <Form.Label for="foodType">Food type</Form.Label>
                             <Form.Control autoFocus name="foodType" id="foodType" value={child.foodType || ' '}>
-                                {/* <option>BREAST_FEEDING</option>
-                                <option>MODIFICATION_MILK</option> */}
                             </Form.Control>
                         </Form.Group>
 

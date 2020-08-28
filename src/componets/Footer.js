@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card'
 
 class Footer extends Component {
   render() {
-    // return musi zwracać środek 
     return (
       <div>
         <>

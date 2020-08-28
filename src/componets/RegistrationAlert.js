@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Alert from 'react-bootstrap/Alert'
-
-
 import '././CSS/RegistrationAlert.css'
 
 class RegistrationAlert extends Component {
@@ -14,7 +12,6 @@ class RegistrationAlert extends Component {
           heading: this.props.heading,
           message: this.props.message
         };
-    
       }
 
       setMessage = (message) => {

@@ -6,7 +6,6 @@ import './CSS/Contact.css'
 
 class Contact extends Component {
   render() {
-    // return musi zwracać środek 
     return <div className="Contact">
       <Form>
         <Form.Group controlId="formBasicEmail" size="lg">
@@ -22,7 +21,7 @@ class Contact extends Component {
           <Form.Control type="text" placeholder="telephone" />
         </Form.Group>
 
-        <Button block-size="lg" type="submit">
+        <Button variant="warning" block-size="lg" type="submit">
           Submit
         </Button>
       </Form>

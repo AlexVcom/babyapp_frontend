@@ -75,21 +75,6 @@ class Registration extends Component {
         
       })
     })
-    // fetch('/api/child', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({
-    //     name: childName,
-    //     birthDate: childBirthDay,
-    //     gender: gender,
-    //     weight: weight,
-    //     growth: growth,
-    //     foodType: foodType
-    //   })
-    // })
     .then(function (response) {
       if (response.status === 200) {
         this.showRegistrationAlert("success", "User registered!", "You can now log in using your credentials.");
@@ -109,10 +94,7 @@ class Registration extends Component {
     this.registrationAlert.current.setVisible(true);
   }
 
-
-
   render() {
-    // return musi zwracać środek 
     return (
       <>
         <div className="Registration">
@@ -146,7 +128,6 @@ class Registration extends Component {
               <Form.Label>Child name</Form.Label>
               <Form.Control autoFocus name="childName" placeholder="Child name" />
             </Form.Group>
-            {/* //data urodzenia  */}
             <Form.Group controlId="childBirthDay" size="lg">
               <Form.Label>Child Birth Day</Form.Label><br />
               <DatePicker selected={this.state.startDate}
@@ -154,7 +135,6 @@ class Registration extends Component {
             </Form.Group>
 
             <Form.Row>
-              {/* sex */}
               <Form.Group controlId="gender">
                 <Form.Label>Gender</Form.Label>
                 <Form.Control as="select" name="gender">
@@ -162,7 +142,6 @@ class Registration extends Component {
                   <option>MALE</option>
                 </Form.Control>
               </Form.Group>
-              {/* food type */}
               <Form.Group controlId="foodType" size="lg">
                 <Form.Label>Food type</Form.Label>
                 <Form.Control as="select" name="foodType" defaultValue="Choose...">
@@ -175,33 +154,18 @@ class Registration extends Component {
               <Form.Label>Growth</Form.Label>
               <Form.Control autoFocus name="growth" placeholder="Child growth" />
             </Form.Group>
-
-              {/* <Form.Group controlId="growth">
-                <Form.Label>Growth</Form.Label>
-                <Form.Control as="select" name="growth">
-                  <option>123</option>
-                  <option>132</option>
-                </Form.Control>
-              </Form.Group> */}
-
               <Form.Group controlId="weight" size="l">
               <Form.Label>Weight</Form.Label>
-              {/* <Form.Control autoFocus name="weight" placeholder="Child weight" /> */}
               <NumericInput autoFocus name="weight" controlId="weight" className="form-control"
               step={0.1} precision={1} value={4.1} snap/>
             </Form.Group>
             </Form.Row>
-
-            <Button variant="primary" type="submit">Submit</Button>
-          </Form>
-          
+            <Button variant="warning" type="submit">Submit</Button>
+            </Form>
         </div>
-
         <RegistrationAlert ref = { this.registrationAlert }/>
       </>
-
     );
   }
 }
-
 export default Registration;
